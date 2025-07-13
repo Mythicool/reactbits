@@ -1,27 +1,62 @@
 {
-  "name": "reactbitcopy",
-  "version": "0.1.0",
-  "private": true,
+  "name": "reactbits-playground",
+  "version": "1.0.0",
+  "description": "Interactive React component playground with 37 animated components built with Framer Motion. Features live preview, code generation, TypeScript support, and comprehensive documentation.",
+  "keywords": [
+    "react",
+    "components",
+    "animation",
+    "framer-motion",
+    "typescript",
+    "playground",
+    "ui-library",
+    "nextjs",
+    "tailwindcss",
+    "interactive",
+    "code-generation",
+    "component-library"
+  ],
+  "author": "ReactBits",
+  "license": "MIT",
+  "homepage": "https://reactbits-playground.pages.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/reactbits-playground.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/reactbits-playground/issues"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build",
+    "preview": "npm run build && npx serve out",
+    "type-check": "tsc --noEmit",
+    "build:analyze": "ANALYZE=true npm run build"
   },
   "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.3",
+    "lucide-react": "^0.525.0",
+    "next": "15.3.5",
+    "prism-react-renderer": "^2.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.5"
+    "react-syntax-highlighter": "^15.6.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "@types/react-dom": "^19.1.6",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
